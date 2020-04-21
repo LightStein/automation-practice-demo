@@ -13,6 +13,7 @@ Feature: AutomationPractice Main Test
       | username                 | password     |
       | viktorviktor11@gmail.com | 123456qwerty |
 
+    @MainScenario
     Scenario: AutomationPractice Test Scenario
       When User clicks women category button
       And User randomly chooses product and is redirected to Order Summary Page
