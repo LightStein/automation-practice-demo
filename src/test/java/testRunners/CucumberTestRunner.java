@@ -6,7 +6,10 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 @CucumberOptions(
         glue = {"stepDefs"},
         features = {"src/test/resources/features"},
-        tags = {"@MainScenario"}
+        tags = {"@MainScenario"},
+        format = {"pretty",
+                "json:target/cucumber.json",
+                "html:target/reports-pretty/"}
 )
 public class CucumberTestRunner extends AbstractTestNGCucumberTests {
 
